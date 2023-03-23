@@ -2,7 +2,7 @@ import os, discord, requests, asyncio, openai
 from google.cloud import texttospeech as tts
 from discord.ext import commands
 
-openai.api_key = "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"
+openai.api_key = ""
 ai_context = open("context.txt", "r").read()
 
 intents = discord.Intents.default()
@@ -125,4 +125,4 @@ async def generate_image(ctx, *, prompt):
     else:
         await ctx.send(f'An error occurred while generating the image')
 
-bot.run("NjMxNjU4MDA2NTY3NzE0ODI2.GPyCAY.Lx8YAzpQmhr71x0FwuEOoVhXZLNLzOf7e086bY")
+bot.run("")
